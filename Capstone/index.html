@@ -3,16 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <meta name="description" content="Professional resume and portfolio">
+    <title>My Professional Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .skill-item {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h2>Summary</h2>
-    <h2>Education</h2>
-    <h2>Work Experience</h2>
-    <h2>Skills</h2>
-    <h2>Awards & Achievement</h2>
-    <a href="./about.html"> THishihsihsi</a>
-    
-    
+    <header>
+        <h1>Your Name</h1>
+        <p>Professional Title</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>A brief, compelling professional summary highlighting your key strengths and career objectives.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Degree Name</h3>
+            <p>University Name</p>
+            <p>Graduation Year</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <h3>Job Title</h3>
+            <p>Company Name | Duration</p>
+            <ul>
+                <li>Key achievement or responsibility</li>
+                <li>Key achievement or responsibility</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">Technical Skills</div>
+            <div class="skill-item">Soft Skills</div>
+            <div class="skill-item">Tools & Technologies</div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Awards & Achievements</h2>
+        <ul>
+            <li>Notable achievement with brief description</li>
+            <li>Notable achievement with brief description</li>
+        </ul>
+    </section>
 </body>
 </html>
