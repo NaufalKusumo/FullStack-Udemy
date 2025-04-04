@@ -1,9 +1,10 @@
+/* Sakura-inspired color palette */
 :root {
-    --primary: #a0004b;
-    --secondary: #6d0047;
-    --accent: #F6B17A;
-    --text: #ff3694;
-    --light: #F6F6F6;
+    --primary: #F2B5D4;      /* Light pink */
+    --secondary: #E45C96;    /* Medium pink */
+    --accent: #9C2C77;       /* Deep pink/purple */
+    --text: #5C2751;         /* Dark pink/purple */
+    --light: #FFF5F9;        /* Very light pink */
 }
 
 * {
@@ -19,49 +20,89 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: var(--light);
 }
 
+/* Header Styles */
 header {
     background-color: var(--primary);
     padding: 1rem 2rem;
-    color: var(--light);
+    color: var(--accent);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-nav {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 
-.nav-links a {
-    color: var(--light);
-    text-decoration: none;
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
     margin-left: 2rem;
-    transition: color 0.3s;
 }
 
-.nav-links a:hover {
+header nav ul li a {
     color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
 }
 
-main {
-    flex: 1;
-    padding: 2rem;
+header nav ul li a:hover {
+    color: var(--text);
+}
+
+/* Container for main content and aside */
+.container {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/* Main Content */
+main {
+    flex: 3;
+}
+
+section {
+    margin-bottom: 3rem;
 }
 
 .hero {
     text-align: center;
     margin-bottom: 3rem;
+    padding: 3rem 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background: linear-gradient(to bottom, rgba(242, 181, 212, 0.2), rgba(255, 255, 255, 1));
 }
 
 .hero h2 {
-    color: var(--primary);
+    color: var(--accent);
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+.destinations h2, .about-section h2 {
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
 }
 
 .destination-grid {
@@ -73,63 +114,179 @@ main {
 .destination-card {
     flex: 1;
     min-width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(242, 181, 212, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(228, 92, 150, 0.2);
+}
+
+.destination-card header {
+    background-color: var(--secondary);
+    padding: 1rem;
+    text-align: center;
+}
+
+.destination-card header h3 {
+    color: white;
+    margin: 0;
+}
+
+.destination-card .content {
     padding: 1.5rem;
-    background-color: var(--light);
+    flex: 1;
+}
+
+.destination-card footer {
+    background-color: rgba(242, 181, 212, 0.2);
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    font-style: italic;
+}
+
+.about-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--secondary);
+}
+
+.about-section p {
+    margin-bottom: 1rem;
+}
+
+/* Aside Styles */
+aside {
+    flex: 1;
+    min-width: 250px;
+}
+
+.profile {
+    background-color: var(--secondary);
+    padding: 2rem;
+    color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-aside {
-    background-color: var(--secondary);
-    padding: 2rem;
-    color: var(--light);
-}
-
-.profile {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
 .profile img {
     width: 100%;
-    max-width: 400px;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border: 3px solid white;
 }
 
+.profile h3 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.quick-facts {
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.quick-facts h4 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.quick-facts ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.quick-facts li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
 footer {
     background-color: var(--primary);
-    color: var(--light);
-    padding: 2rem;
-    text-align: center;
-}
-
-.footer-links {
-    margin-top: 1rem;
-}
-
-.footer-links a {
-    color: var(--light);
-    text-decoration: none;
-    margin: 0 1rem;
-}
-
-.footer-links a:hover {
     color: var(--accent);
+    padding: 3rem 2rem;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.footer-container section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 0;
+}
+
+.footer-container h3 {
+    color: var(--accent);
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.footer-links nav ul {
+    list-style: none;
+}
+
+.footer-links nav ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a, .footer-contact a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-contact a:hover {
+    color: var(--text);
+}
+
+address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
-    nav {
+    .header-container {
         flex-direction: column;
         text-align: center;
     }
 
-    .nav-links {
+    header nav ul {
         margin-top: 1rem;
+        justify-content: center;
     }
 
-    .nav-links a {
+    header nav ul li {
         margin: 0 1rem;
     }
 
@@ -137,8 +294,20 @@ footer {
         flex-direction: column;
     }
 
-    .destination-card {
-        min-width: 100%;
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-links nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .footer-links nav ul li {
+        margin: 0;
     }
 }
 
@@ -147,11 +316,19 @@ footer {
         font-size: 14px;
     }
 
+    .container {
+        padding: 1rem;
+    }
+
     .hero h2 {
         font-size: 2rem;
     }
 
-    .nav-links a {
+    header nav ul li {
         margin: 0 0.5rem;
+    }
+    
+    .destination-card {
+        min-width: 100%;
     }
 }

@@ -1,65 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploring Japan - Travel Guide</title>
+    <title>Jelajahi Jepang - Panduan Wisata</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <h1>Japan Explorer</h1>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#destinations">Destinations</a>
-                <a href="#about">About</a>
-            </div>
-        </nav>
+        <div class="header-container">
+            <h1>Penjelajah Jepang</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#destinations">Destinasi</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <article class="hero">
-            <h2>Kunjungi Keindahan Jepang</h2>
-            <p>Dari tempat-tempat tua hingga kota-kota modern, rasakan perpaduan tradisi dan inovasi.</p>
-        </article>
+    <div class="container">
+        <main id="home">
+            <section class="hero">
+                <h2>Temukan Keindahan Jepang</h2>
+                <p>Dari kuil kuno hingga kota modern, rasakan perpaduan sempurna antara tradisi dan inovasi.</p>
+            </section>
 
-        <article class="destinations" id="destinations">
-            <header>
+            <section class="destinations" id="destinations">
                 <h2>Destinasi Populer</h2>
-            </header>
-            <div class="destination-grid">
-                <div class="destination-card">
-                    <h3>Tokyo</h3>
-                    <p>Kehidupan modern dari kota Jepang.</p>
+                <div class="destination-grid">
+                    <article class="destination-card">
+                        <header>
+                            <h3>Tokyo</h3>
+                        </header>
+                        <div class="content">
+                            <p>Rasakan budaya dinamis ibu kota Jepang. Tokyo menawarkan perpaduan unik antara ultramodern dan tradisional, dari pencakar langit yang diterangi neon hingga kuil-kuil bersejarah.</p>
+                        </div>
+                        <footer>
+                            <p>Waktu terbaik untuk berkunjung: Musim Semi dan Musim Gugur</p>
+                        </footer>
+                    </article>
+                    
+                    <article class="destination-card">
+                        <header>
+                            <h3>Kyoto</h3>
+                        </header>
+                        <div class="content">
+                            <p>Jelajahi kuil tradisional dan taman yang indah. Kyoto, yang dulunya merupakan ibu kota Jepang, terkenal dengan banyaknya kuil Buddha klasik, taman, istana kekaisaran, dan rumah kayu tradisional.</p>
+                        </div>
+                        <footer>
+                            <p>Waktu terbaik untuk berkunjung: April untuk bunga sakura</p>
+                        </footer>
+                    </article>
+                    
+                    <article class="destination-card">
+                        <header>
+                            <h3>Gunung Fuji</h3>
+                        </header>
+                        <div class="content">
+                            <p>Kunjungi simbol ikonik Jepang dan gunung suci. Gunung berapi aktif ini adalah puncak tertinggi Jepang dan telah menjadi situs ziarah selama berabad-abad.</p>
+                        </div>
+                        <footer>
+                            <p>Waktu terbaik untuk berkunjung: Juli hingga September untuk pendakian</p>
+                        </footer>
+                    </article>
                 </div>
-                <div class="destination-card">
-                    <h3>Kyoto</h3>
-                    <p>Tempat-tempat tua nan indah.</p>
-                </div>
-                <div class="destination-card">
-                    <h3>Gunung Fuji</h3>
-                    <p>Sebuah spot simbolik dan ikonik negara Jepang.</p>
-                </div>
-            </div>
-        </article>
-    </main>
+            </section>
 
-    <aside>
-        <div class="profile">
-            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=500&auto=format" alt="Cherry blossoms in Japan">
-            <h3>Travel Guide</h3>
-            <p>Guide lengkap anda untuk mengeksplorasi budaya dan pemandangan indah Jepang.</p>
-        </div>
-    </aside>
+            <section id="about" class="about-section">
+                <h2>Tentang Jepang</h2>
+                <p>Jepang adalah negara kepulauan di Asia Timur. Terletak di Samudra Pasifik, negara ini berada di lepas pantai timur benua Asia dan membentang dari Laut Okhotsk di utara hingga Laut Cina Timur dan Laut Filipina di selatan.</p>
+                <p>Lima pulau utama negara ini, dari utara ke selatan, adalah Hokkaido, Honshu, Shikoku, Kyushu, dan Okinawa. Jepang dikenal di seluruh dunia karena seni tradisionalnya, termasuk upacara minum teh, kaligrafi, dan merangkai bunga.</p>
+            </section>
+        </main>
+
+        <aside>
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=500&auto=format" alt="Bunga sakura di Jepang">
+                <h3>Panduan Wisata</h3>
+                <p>Panduan lengkap Anda untuk menjelajahi budaya kaya dan pemandangan indah Jepang.</p>
+                <section class="quick-facts">
+                    <h4>Fakta Singkat</h4>
+                    <ul>
+                        <li>Ibu Kota: Tokyo</li>
+                        <li>Bahasa: Jepang</li>
+                        <li>Mata Uang: Yen Jepang (¥)</li>
+                        <li>Populasi: 126 juta</li>
+                    </ul>
+                </section>
+            </div>
+        </aside>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Japan Explorer. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#contact">Contact</a>
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
+        <div class="footer-container">
+            <section class="footer-info">
+                <h3>Penjelajah Jepang</h3>
+                <p>&copy; 2025 Penjelajah Jepang. Hak Cipta Dilindungi.</p>
+            </section>
+            
+            <section class="footer-links">
+                <h3>Tautan Cepat</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#destinations">Destinasi</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </nav>
+            </section>
+            
+            <section id="contact" class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <address>
+                    <p>Email: <a href="mailto:info@penjelajahjepang.com">info@penjelajahjepang.com</a></p>
+                    <p>Telepon: +81 3-1234-5678</p>
+                </address>
+            </section>
         </div>
     </footer>
 </body>
