@@ -54,14 +54,6 @@ body {
     color: white;
 }
 
-.input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-}
-
 .wrapper .remForgot{
     display: flex;
     justify-content: space-between;

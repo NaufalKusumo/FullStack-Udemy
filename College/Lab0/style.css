@@ -1,0 +1,157 @@
+:root {
+    --primary: #a0004b;
+    --secondary: #6d0047;
+    --accent: #F6B17A;
+    --text: #ff3694;
+    --light: #F6F6F6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    color: var(--light);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links a {
+    color: var(--light);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero h2 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.destination-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    flex: 1;
+    min-width: 250px;
+    padding: 1.5rem;
+    background-color: var(--light);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+aside {
+    background-color: var(--secondary);
+    padding: 2rem;
+    color: var(--light);
+}
+
+.profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: var(--light);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+    }
+
+    .nav-links a {
+        margin: 0 1rem;
+    }
+
+    .destination-grid {
+        flex-direction: column;
+    }
+
+    .destination-card {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .nav-links a {
+        margin: 0 0.5rem;
+    }
+}
