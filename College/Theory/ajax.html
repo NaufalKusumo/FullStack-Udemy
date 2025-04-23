@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX Demo</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h2>My Simple AJAX Demo</h2>
+
+<div id="info">
+  <p>This text will be replaced.</p>
+</div>
+
+<a href="https://www.google.com">Google</a>
+
+<button id="loadBtn">Load Info</button>
+
+<script>
+$("button").click(function(){
+    $.ajax({
+        url: "message.txt",
+        success: function(result){
+            $("#info").html(result);
+            }
+            });
+        });
+</script>
+
+</body>
+</html>
