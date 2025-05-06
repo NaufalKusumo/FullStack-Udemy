@@ -9,6 +9,7 @@ $("#movableRightBtn").click(function() {
   });
 });
 
+// ANIMATION RIGHT LEFT
 $("#movableRightLeftBtn").click(function() {
   $("#movableRightLeftBox")
     .animate({
